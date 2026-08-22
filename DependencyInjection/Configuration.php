@@ -15,8 +15,7 @@ class Configuration implements ConfigurationInterface
     */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $treeBuilder->root('sculpin_meta_navigation');
+        $treeBuilder = new TreeBuilder('sculpin_meta_navigation');
 
         return $treeBuilder;
     }
